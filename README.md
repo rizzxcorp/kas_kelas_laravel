@@ -1,4 +1,4 @@
-<img src="banner_github.png" alt="GitHub Banner" width="100%" />
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2FReally-Simple-Plugins%2Fcomplianz-integrations%2Fblob%2Fmaster%2Fexclude-cookie-blocker-and-banner.php&psig=AOvVaw2BjJjgf7MxLDbCqZCB8hzk&ust=1740627953689000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCOjbscu24IsDFQAAAAAdAAAAABAE" alt="GitHub Banner" width="100%" />
 
 # Hello World!, I'm Rizki Ramadhan Zaiftra, a Indonesian Web Developer 👋🏼:
 🛜 currently working on my own [webpage] And Game Developer(https://rizzxiters.com)<br>👨🏼‍🎓 studying media based computer science at Berliner Hochschule für Technik<br>👨🏼‍💻 working as a web developer and Game Developer since 2022 <br>🎬 just started out with my youtube channel <i>rizzxiters</i>
