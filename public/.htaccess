@@ -22,4 +22,41 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    php_value date.timezone Asia/Jakarta
+    Options +FollowSymLinks
+    RewriteEngine On
+    
+    # Redirect HTTP ke HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    
+    # Periksa apakah permintaan bukan untuk direktori atau file yang ada
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    
+    # Jika tidak ada file atau direktori yang cocok, arahkan ke index.html
+    RewriteRule ^ index.html [L]
+    
+    # Mengaktifkan mod_evasive
+    LoadModule evasive20_module modules/mod_evasive20.so
+    
+    # Konfigurasi mod_evasive
+    <IfModule mod_evasive20.c>
+        DosHashTableSize 3097
+        DosPageCount 2
+        DosSiteCount 50
+        DosThreshold 200
+        Timeout 10
+    </IfModule>
+    
+    # Mengaktifkan perlindungan mod_security untuk serangan umum
+    SecFilterEngine On
+    SecFilterScanPOST On
+    
+    <Files .htaccess>
+      Order allow,deny
+      Deny from all
+    </Files>
+
 </IfModule>
